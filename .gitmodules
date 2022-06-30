@@ -10,3 +10,6 @@
 [submodule "HARDWARE-PORT"]
 	path = HARDWARE-PORT
 	url = https://github.com/Forairaaaaa/HARDWARE-PORT.git
+[submodule "FastLED"]
+	path = FastLED
+	url = https://github.com/Forairaaaaa/FastLED.git
