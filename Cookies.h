@@ -9,8 +9,16 @@
 #include "./TinyMotor/TinyMotor.h" 
 #include "./TinyPMU/TinyPMU.h"
 
-/* Config define */
-#define COOKIES_VERSION "V1.0"
+/* Cookies config */
+#define COOKIES_VERSION  "V1.0"
+#define COOKIES_PIN_SDA  21
+#define COOKIES_PIN_SCL  20
+#define COOKIES_PIN_RGB  2
+#define COOKIES_EDP_MOSI 5
+#define COOKIES_EDP_CLK  4
+#define COOKIES_EDP_DC   5
+#define COOKIES_EDP_RST  8
+#define COOKIES_EDP_BUSY 9
 
 /* Functions define */
 #define _log_logo() Serial.println(CookiesLogo)
@@ -39,7 +47,7 @@ class COOKIES {
     /* RGB led control */
     CRGB leds[3];
     CFastLED RGB_LED;
-
+    void setRGB_LED(uint8_t led_id, CRGB::HTMLColorCode color, uint8_t brightness);
 };
 
 #endif
