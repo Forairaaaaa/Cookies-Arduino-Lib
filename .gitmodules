@@ -10,3 +10,6 @@
 [submodule "FastLED"]
 	path = FastLED
 	url = https://github.com/Forairaaaaa/FastLED.git
+[submodule "TinyMotor"]
+	path = TinyMotor
+	url = https://github.com/Forairaaaaa/TinyMotor.git
