@@ -13,6 +13,3 @@
 [submodule "TinyMotor"]
 	path = TinyMotor
 	url = https://github.com/Forairaaaaa/TinyMotor.git
-[submodule "GxEPD"]
-	path = GxEPD
-	url = https://github.com/ZinggJM/GxEPD.git

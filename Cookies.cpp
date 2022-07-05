@@ -29,14 +29,14 @@ void COOKIES::begin() {
         _log_string("PMU", "Init error");
     else {
         /* Enable motor 1 power */
-        // PMU.setOutputEnable(AXP173::OP_LDO3, true);
-        // PMU.setOutputVoltage(AXP173::OP_LDO3, 2700);
-        // /* Enable motor 2 power */
-        // PMU.setOutputEnable(AXP173::OP_LDO2, true);
-        // PMU.setOutputVoltage(AXP173::OP_LDO2, 2700);
-        // /* Enable RGB LED power */
-        // PMU.setOutputEnable(AXP173::OP_LDO4, true);
-        // PMU.setOutputVoltage(AXP173::OP_LDO4, 3500);
+        PMU.setOutputEnable(AXP173::OP_LDO3, true);
+        PMU.setOutputVoltage(AXP173::OP_LDO3, 2700);
+        /* Enable motor 2 power */
+        PMU.setOutputEnable(AXP173::OP_LDO2, true);
+        PMU.setOutputVoltage(AXP173::OP_LDO2, 2700);
+        /* Enable RGB LED power */
+        PMU.setOutputEnable(AXP173::OP_LDO4, true);
+        PMU.setOutputVoltage(AXP173::OP_LDO4, 3500);
         _log_string("PMU", "Init successful!");
     }
 

@@ -4,10 +4,12 @@
 /* Includes */
 #include "Arduino.h"
 #include "Wire.h"
+#include "SPI.h"
 #include "./FastLED/src/FastLED.h"
 #include "./RGB-SEN/RGB_SEN.h"
 #include "./TinyMotor/TinyMotor.h" 
 #include "./TinyPMU/TinyPMU.h"
+
 
 /* Cookies config */
 #define COOKIES_VERSION  "V1.0"
@@ -44,6 +46,10 @@ class COOKIES {
 
     /* PMU */
     AXP173 PMU;
+
+    /* EPD */
+    // GxIO_Class io(SPI, /*CS=*/ -1, /*DC=*/ 7, /*RST=*/ 8);
+    // GxEPD_Class display(io, /*RST=*/ 6, /*BUSY=*/ 9);
 
     /* RGB led control */
     CRGB leds[3];
