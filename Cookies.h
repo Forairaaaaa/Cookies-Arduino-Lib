@@ -13,7 +13,7 @@
 #define COOKIES_VERSION  "V1.0"
 #define COOKIES_PIN_SDA  21
 #define COOKIES_PIN_SCL  20
-#define COOKIES_PIN_RGB  2
+#define COOKIES_PIN_RGB  10
 #define COOKIES_EDP_MOSI 5
 #define COOKIES_EDP_CLK  4
 #define COOKIES_EDP_DC   5
@@ -34,6 +34,7 @@ class COOKIES {
     public:
     /* Basic functions */
     void begin();
+    int I2C_Scan();
 
     /* RGBW sensor */
     RGB_SEN RGB_Sensor;
