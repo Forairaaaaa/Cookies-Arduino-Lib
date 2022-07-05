@@ -1,6 +1,3 @@
-[submodule "TinyMotor"]
-	path = TinyMotor
-	url = https://github.com/Forairaaaaa/TinyMotor.git
 [submodule "TinyPMU"]
 	path = TinyPMU
 	url = https://github.com/Forairaaaaa/TinyPMU.git
